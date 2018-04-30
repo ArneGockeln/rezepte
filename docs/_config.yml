@@ -40,3 +40,7 @@ paginate_path: "/page:num/"
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 feed:
    path: rss-feed.xml
+
+collections:
+  rezepte: 
+    output: true

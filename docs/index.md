@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Rezepte"
 description: "Schnelle gesunde Rezepte, meist nach Paleo orientiert"
 keywords: "Rezepte"
