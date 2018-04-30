@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<a href="{{ site.url }}"><< &Uuml;bersicht</a>
+
+{% for bild in page.bilder %}
+	<a href="{{ site.url }}/images/{{ bild }}" class="fancybox" data-fancybox="group">
+		<img src="{{ site.url }}/images/{{ bild }}" class="img-responsive img-rounded"{% unless forloop.first %}style="display:none;"{% endunless %}/>
+	</a>
+{% endfor %}
+
+{{ content }}
+
+<h3>Zutaten</h3>
+<table class="table table-responsive table-zutaten">
+	<thead>
+		<tr>
+			<th>Menge</th>
+			<th>Zutat</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for zutat in page.zutaten %}
+		<tr>
+			<td>{{ zutat.menge }}</td>
+			<td>{{ zutat.name }}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
